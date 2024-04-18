@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+ 
+{% block page_header%}
+<div class="p-3 mb-4 bg-light border rounded-3">
+<div class="container-fluid py-4">
+    <img src="{%static 'rcf_logo.png' %}" width="897" height="504">
+<h1>Regina Community Fridge</h1>
+<p>Take what you need, leave what you can.</p>
+{% endblock page_header%}
+</div>
+</div>
+{% block content %}
+<h2>Our mission</h2>
+<p><a href="https://globalnews.ca/news/10091223/saskatchewan-families-food-insecurity-statistics-canada/">According to Global News,</a> almost 20% of Saskatchewan experienced food insecurity in 2023, and that number is only growing. Our mission is to decrease that number by providing our community in Regina with a decentralized and easily accessible way to meet their basic human right of food.</p>
+<h2>What we do</h2>
+<p>We run a community fridge located in north central Regina. Here, you are free to take what you need at any time of day. All that we ask is that you help when you can. This can be something as simple as cleaning up boxes around the fridge or something as advanced as holding a large fundraiser. <br> To see all the ways you can help, <a href="[% url 'index:volunteer' %]">Click here.</a></p>
+<h2>Visit us</h2>
+<p>We are located at 3037 Dewdney Avenue near Regina Family Farmacy. See below for a map.</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.261235705411!2d-104.62982641327179!3d50.45485990881123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1e6809b1e3f7%3A0x48cdd646e6eb37c9!2s3037%20Dewdney%20Ave%2C%20Regina%2C%20SK%20S4T%200Y3!5e0!3m2!1sen!2sca!4v1712080808973!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+{% endblock content %}

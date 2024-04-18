@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="p-3 mb-4 bg-light border rounded-3"> 
+    <div class="container-fluid py-4">
+        <h1>Donation Guide</h1>
+        <p>At Regina Community Fridge, the safety and well-being of our commuty is of extreme importance. For that reason, we have put together a donation guide in order to ensure everyone is on the same page.</p>
+    </div>
+</div>
+{% endblock page_header %}
+{% block content %}
+<h2>Monetary donations </h2>
+<p>Donating money to the Regina Community Fridge allows us to purchase more supplies to keep the fridge running. If you have a donation of this kind, you can <a href="https://www.gofundme.com/f/regina-community-fridge?utm_medium=copy_link&utm_source=customer&utm_campaign=p_na+share-sheet&rcid=8b99f1e11e6c45c1abec31c676eab74a">Donate to our GoFundMe</a></p>
+<p>If you have a monetary donation in another form, <a href="{% url 'index:contact' %}">Feel free to reach out to us</a> and we will be in touch.</p>
+<h2>Food</h2>
+<h3>Do Donate</h3>
+<ul>
+    <li>Dairy and alternatives (milk, butter, yogourt, soy milk, coconut milk, margerinne etc.)</li>
+    <li>Fresh fruits and vegetables.</li>
+    <li>Non-alcoholic drinks (water, juice, Gatorade, etc.)</li>
+    <li>Frozen meals for the freezer. (Frozen pizza, TV dinners, bread, soup, etc.)</li>
+    <li>Items that do not have to be frozen for the pantry (Canned goods, baby food, cerial, salt, sugar, oil, etc.)</li>
+    <li>Single-serving snacks such as branola bars (If expiry date is visable on the product)</li>
+    <li>Prepared meals if you are a business and/or have your food cirtification.</li>
+    <p>Please note that all items must be sealed, and an expiration date must be visible.</p>
+</ul>
+<h3>Don't Donate</h3>
+<ul>
+    <li>Alcohol </li>
+    <li>Home-cooked meals</li>
+    <li>Rotten food</li>
+    <li>Opened food.</li>
+</ul>
+<p>If you are a business and would like to make regular donations, <a href="{%url 'index:contact' %}">Get in touch.</a></p>
+<h2>Non-food Items</h2>
+<h3>Do Donate</h3>
+<ul>
+    <li>Pads and tampons</li>
+    <li>Toothpaste, toothbrushes</li>
+    <li>Soap, body wash, shampoo</li>
+    <li>Hand sanitizer</li>
+    <li>Medical masks</li>
+    <h3>Don't Donate</h3>
+    <li>Openned or used items</li>
+</ul>
+<h2>Pets</h2>
+<h3>Do Donate</h3>
+<ul>
+<li>Unopened pet food</li>
+</ul>
+<h3>Don't Donate</h3>    
+<ul>
+    <li>Stale or openned pet food</li>
+</ul>
+{% endblock content %}

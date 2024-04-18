@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regina Community Fridge</title>
+    {% load django_bootstrap5 %} 
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <style>
+        .bg-med-green {
+        background-color: darkgreen;
+    
+    }</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-med-green justify-content-center mb-4 border">
+        <ul class="navbar-nav">
+        <li class="nav-item mx3"> <a class="nav-link text-white" href="{% url 'index:home' %}">Home</a></li>
+        <li class="nav-item mx3"><a class="nav-link text-white" href="{% url 'index:volunteer'%}">Volunteer</a></li>
+        <li class="nav-item mx3"><a class="nav-link text-white" href="{% url 'index:messageboard' %}">Messageboard</a></li>
+        <li class="nav-item mx3"><a class="nav-link text-white" href="{% url 'index:contact' %}">Contact Us</a></li>
+        </ul>
+        </nav>
+        <main class="container">
+            <div class="pb-2 mb-2 border-bottom"> 
+                {% block page_header %}
+                {% endblock page_header %} 
+</div>
+        {%block content %}
+        {%endblock content%}
+        </main>
+</body>
+</html>
