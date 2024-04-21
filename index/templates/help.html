@@ -4,14 +4,13 @@
 {% block page_header %}
 <div class="p-3 mb-4 bg-light border rounded-3"> 
     <div class="container-fluid py-4">
-        <h1>How to Help</h1>
+        <h1>{{ page_title }}</h1>
         <p>There are a lot of ways to get involved with the Regina Community Fridge. Here is a short run-down of the main ways to get involved.</p>
     </div>
 </div>
 {% endblock page_header %}
 {% block content %}
 
-<div class="container text-center">
         <h2>FlashFood pickups</h2>
         <img src="{% static 'flashfood.svg' %}" width="150" height="150" alt="A monochrome image of a shopping bag.">
         <p class="text-break lh-lrg mx-5 my-5 px-5 py-5">FlashFood is an app that allows grocery stores to post food that is at risk of going to waste. It is less expensive than if you were to buy it normally. Let us know when you are going to do a FlashFood pickup, and we will put a notice out to the <a href="{% url 'index:messageboard' %}">message board.</a></p>

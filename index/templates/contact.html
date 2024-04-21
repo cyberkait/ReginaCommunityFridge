@@ -1,17 +1,23 @@
 {% extends "base.html" %}
+{%load static%}
 {%block page_header %}
 <div class="p-3 mb-4 bg-light border rounded-3">
     <div class="container-fluid py-4">
-    <h1>Contact us</h1>
-    <p>We'd love to hear from you. If you would like to get in contac with the Regina Community Fridge, you may do so in the following ways:</p>
+    <h1>{{ page_title</h1>
+    <p>We'd love to hear from you. If you would like to get in contact with the Regina Community Fridge, you may do so in the following ways:</p>
+</div>
 </div>
 {%endblock page_header %}
 {%block content %}
 <h2>Email</h2>
-<p>the quickest and easiest way to contact us is through our email, <a href="reginacommunityfridge@gmail.com">reginacommunityfridge@gmail.com</a>. If you don't have an Instagram account, this is the way to reach us.</p>
+<img src="{%static 'email.svg' %}" width="150" height="150" ald="A monochrome image of an envelope.">
+<p class="text-break lh-lrg mx-5 my-5 px-5 py-5">the quickest and easiest way to contact us is through our email, <a href="reginacommunityfridge@gmail.com">reginacommunityfridge@gmail.com</a>. If you don't have an Instagram account, this is the way to reach us.</p>
+<br>
 <h2>Instagram</h2>
-<p>If you have Instagram, you can also reach us via direct messaging (DM). We also post majority of our updates on Instagram, so it is the best way to keep up with us. we are <a href="https://www.instagram.com/reginacommunityfridge/">@reginacommunityfridge</a>.</p>
+<img src="{%static 'instagram.svg' %}" width="150" height="150" alt="A monochromeimage of the Instagram logo.">
+<p class="text-break lh-lrg mx-5 my-5 px-5 py-5">If you have Instagram, you can also reach us via direct messaging (DM). We also post majority of our updates on Instagram, so it is the best way to keep up with us. we are <a href="https://www.instagram.com/reginacommunityfridge/">@reginacommunityfridge</a>.</p>
+<br>
 <h2>Facebook group</h2>
-<p>Another way to get in contact with us is Facebook. You cannot message the people behind the community fridge directly here, but it is still a great source of information. Our group is called <a href="https://www.facebook.com/groups/314660200154441/">REGINA COMMUNITY FRIDGE (3037 Dewdney Ave)</a>.</p>
+<p class="text-break lh-lrg mx-5 my-5 px-5 py-5">Another way to get in contact with us is Facebook. You cannot message the people behind the community fridge directly here, but it is still a great source of information. Our group is called <a href="https://www.facebook.com/groups/314660200154441/">REGINA COMMUNITY FRIDGE (3037 Dewdney Ave)</a>.</p>
 
 {% endblock content %}

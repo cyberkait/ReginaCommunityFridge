@@ -5,7 +5,7 @@ class Topic(models.Model):
     """
     Topic of post on message board.
     """
-    text = models.CharField(max_length=200)
+    title = models.CharField(max_length=200)
     date_added = models.DateTimeField(auto_now_add=True)
     def __str__(self):
         """
@@ -19,12 +19,13 @@ class Post(models.Model):
     Posts relating to its topic.
     """
     topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
-    text = models.TextField()
+    title= models.CharField(max_length=200)
+    content = models.TextField()
     date_posted = models.DateTimeField(auto_now_add=True)
     def __str__(self):
         """
         Return a  string representing the post, shortened to 50 characters.
         """
-        return f"{self.text[:50]}..."
+        return f"{self.title[:50]}..."
 
 

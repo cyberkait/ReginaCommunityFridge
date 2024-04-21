@@ -1,10 +1,12 @@
 {% extends "base.html" %} 
 {% block content %}
 <a href="{% url 'index:messageboard' %}"> Back </a>
-<h1>{{ topic.text }}</h1> <h2>Posts</h2> <ul>
+{% block content %}
+<h2>Posts</h2> <ul>
     {% for post in posts %}
-    <li> <h3>{{ post.date_posted |date:'M d, Y H:i' }}</h3>
-        <p>{{ post.text|linebreaks }}</p> </li> 
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.date_posted |date:'M d, Y H:i' }}</p>
+        <p>{{ post.content|linebreaks }}</p> </li> 
         {% empty %} <li>There are no posts in this topic yet. <br>Check back later.</li>
         {% endfor %}
     </ul>
