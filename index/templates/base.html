@@ -15,12 +15,12 @@
 </head>
 <body>
     <nav class="navbar navbar-dark bg-med-green mb-4 border">
-        <div class="container justify-content-center">
-          <ul class="navbar-nav list-group-horizontal">
-            <li class="nav-item mx-4"> <a class="nav-link text-white" href="{% url 'index:home' %}">Home</a></li>
-            <li class="nav-item mx-4"><a class="nav-link text-white" href="{% url 'index:volunteer'%}">Volunteer</a></li>
-            <li class="nav-item mx-4"><a class="nav-link text-white" href="{% url 'index:messageboard' %}">Messageboard</a></li>
-            <li class="nav-item mx-4"><a class="nav-link text-white" href="{% url 'index:contact' %}">Contact Us</a></li>
+        <div class="container-fluid justify-content-center">
+          <ul class="navbar-nav list-group-horizontal text-nowrap">
+            <li class="nav-item mx-2 my-2"> <a class="nav-link text-white" href="{% url 'index:home' %}">Home</a></li>
+            <li class="nav-item mx-2 my-2"><a class="nav-link text-white" href="{% url 'index:volunteer'%}">Volunteer</a></li>
+            <li class="nav-item mx-2 my-2"><a class="nav-link text-white" href="{% url 'index:messageboard' %}">Messageboard</a></li>
+            <li class="nav-item mx-2 my-2"><a class="nav-link text-white" href="{% url 'index:contact' %}">Contact Us</a></li>
           </ul>
         </div>
       </nav>
@@ -30,8 +30,8 @@
                 {% endblock page_header %}
       </header>
       
-        <main class="container d-flex justify-content-center align-items-center mp-3"">
-            <div >
+        <main class="container-fluid d-flex justify-content-center align-items-center mp-3"">
+            <div>
                 {%block content %}
                 {%endblock content%}
             </div>
