@@ -24,16 +24,18 @@
           </ul>
         </div>
       </nav>
-      <header>
+      <header class="mt-2 mb-2">
         {% block page_header %}
                 <h1>{{ page_title }}</h1>
                 {% endblock page_header %}
       </header>
       
-        <main class="container text-center pb-2 mb-2 border-bottom">
-        {%block content %}
-        {%endblock content%}
-
+        <main class="container d-flex justify-content-center align-items-center mp-3"">
+            <div >
+                {%block content %}
+                {%endblock content%}
+            </div>
+        
         </main>
 </body>
 </html>
