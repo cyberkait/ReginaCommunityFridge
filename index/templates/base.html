@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0>
     <title>{{page_title}} - Regina Community Fridge</title>
     {% load django_bootstrap5 %} 
     {% bootstrap_css %}
@@ -13,7 +13,7 @@
     
     }</style>
 </head>
-<body>
+<body class="container-fluid">
     <nav class="navbar navbar-dark bg-med-green mb-4 border">
         <div class="container-fluid justify-content-center">
           <ul class="navbar-nav list-group-horizontal">
@@ -31,7 +31,7 @@
       </header>
       
         <main class="container-fluid mp-3">
-            <div class="container-fluid">
+            <div class="container-fluid mx-3">
                 {%block content %}
                 {%endblock content%}
             </div>
