@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>{{page_title}} - Regina Community Fridge</title>
     {% load django_bootstrap5 %} 
     {% bootstrap_css %}
@@ -30,7 +30,7 @@
                 {% endblock page_header %}
       </header>
       
-        <main class="container-fluid text-center mp-3"">
+        <main class="container-fluid mp-3">
             <div class="container-fluid">
                 {%block content %}
                 {%endblock content%}
