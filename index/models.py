@@ -11,7 +11,7 @@ class Topic(models.Model):
         """
         Returns a string representation of data.
         """
-        return self.text
+        return self.title
 
 
 class Post(models.Model): 
