@@ -50,7 +50,7 @@ def topic(request, topic_id):
     """ 
     topic = Topic.objects.get(id=topic_id) 
     posts = topic.post_set.order_by('-date_posted')
-    page_title= Topic.title
+    page_title = f"{Topic.title}"
     context = {'topic': topic, 'posts': posts, 'page_title': page_title} 
     return render(request, 'topic.html', context)
 
